@@ -27,7 +27,7 @@ function submitPost(){
     // Create Post
     http.post('http://localhost:3000/posts', data)
     .then(data => {
-        
+        submitPost();
     })
     .catch();
 }
